@@ -1,44 +1,46 @@
-# CSc 8830: Computer Vision : Assignment 1 Solutions
+# Camera Calibration and Real-World Dimension Measurement
 
-## Question 1
+## Overview
 
-To calibrate the camera, I have used a 8x6 checkerboard pattern.
+This project demonstrates camera calibration using a checkerboard pattern and implements real-world dimension measurement of objects using perspective projection equations[web:13][web:15]. The system converts pixel coordinates to physical measurements using the pinhole camera model[web:13][web:18].
 
-The code to take 10 images of the checker board using both the monochrome (left and right) and color cameras can be found in the file ques1.ipynb The images captured can found in the folder 'images'.
+---
 
-The images are then used for calculating the camera matrix, translation and rotational vectors.
+## Table of Contents
 
-The corrected images are found in the 'images' folder and the corresponding camera values are stored in their respective folders (left, right and color).
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Step 1: Prepare Calibration Pattern](#step-1-prepare-calibration-pattern)
+- [Step 2: Capture Calibration Images](#step-2-capture-calibration-images)
+- [Step 3: Camera Calibration](#step-3-camera-calibration)
+- [Step 4: Save Calibration Parameters](#step-4-save-calibration-parameters)
+- [Step 5: Real-World Dimension Measurement](#step-5-real-world-dimension-measurement)
+- [Validation Experiment](#validation-experiment)
+- [Results](#results)
+- [Troubleshooting](#troubleshooting)
+- [References](#references)
 
-<table>
-  <tr>
-    <td><img src="images/left/17109820135253.png" alt="Image 1"></td>
-    <td><img src="images/left/17109820135253_corners.png" alt="Image 2"></td>
-    <td><img src="images/left/17109820135253_result.png" alt="Image 3"></td>
-  </tr>
-</table>
+---
 
-___
+## Features
 
-## Question 2
+- **Camera calibration** using checkerboard pattern[web:13][web:15]
+- **Distortion correction** with lens distortion models[web:13][web:18]
+- **Interactive ROI selection** for measurement regions[web:7]
+- **Real-world dimension calculation** using pinhole camera model[web:18]
+- **Validation experiments** with known objects[web:18]
 
-Used the camera matrix, rotational matrix, and translation matrix (previously derived in Question 1) to convert image coordinates to world coordinates.
+---
 
-Distance Measurement in 3D Space: Selected two pixel coordinates from an image, converted them into world coordinates using the transformation matrices, and calculated the distance between these 3D points, determining the real-world distance.
+## Prerequisites
 
-Successfully computed the rotation matrix from the extrinsic parameters and subsequently calculated the rotation angles along each axis, choosing the order of rotation based on the experimentation setup and requirements.
+### Hardware Requirements
+- Camera (webcam, DSLR, or smartphone camera)
+- Printed checkerboard pattern (8×6 or 9×6 recommended)[web:12][web:15]
+- Flat surface for mounting the pattern[web:16]
+- Object with known dimensions for validation[web:18]
+- Measuring tape or ruler
 
-___
-
-## Question 3
-
-I designed and implemented a script utilizing perspective projection equations to determine the real-world dimensions of objects.
-
-The implementation includes:
-
-- **ROI Selection**: Resizable window with interactive ROI selection on the display image
-- **Coordinate Mapping**: Maps ROI from display coordinates back to original image coordinates with proper scaling
-- **Camera Intrinsics**: Uses calibrated camera parameters (FX, FY, cx, cy) for accurate measurements
-- **Distance Calculation**: Computes real-world width and height using pinhole camera model with measured distance Z
-
-### Camera Parameters Used:
+### Software Requirements
