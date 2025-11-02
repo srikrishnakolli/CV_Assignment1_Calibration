@@ -44,3 +44,43 @@ This project demonstrates camera calibration using a checkerboard pattern and im
 - Measuring tape or ruler
 
 ### Software Requirements
+
+Python 3.7+
+OpenCV 4.x
+NumPy
+
+
+---
+
+## Installation
+
+Install the required Python packages:
+
+pip install opencv-python opencv-contrib-python numpy
+
+
+
+============================================================
+CAMERA CALIBRATION PARAMETERS
+Camera Matrix (Intrinsics):
+[[4124.85217000 0. 2774.74600000]
+[ 0. 4126.41606000 2302.01489000]
+[ 0. 0. 1. ]]
+
+Intrinsic Parameters:
+fx = 4124.85217000
+fy = 4126.41606000
+cx = 2774.74600000
+cy = 2302.01489000
+
+Distortion Coefficients:
+k1 = -0.42856371
+k2 = 0.18745623
+p1 = 0.00123456
+p2 = -0.00098765
+k3 = -0.03567891
+
+Mean Reprojection Error: 0.245612 pixels
+
+
+
