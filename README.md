@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project implements camera calibration using a checkerboard pattern from **calibdb.net** and develops a measurement system to calculate real-world dimensions of objects using perspective projection equations[web:13][web:15]. The system converts pixel coordinates to physical measurements through the pinhole camera model[web:13][web:26].
+This project implements camera calibration using a checkerboard pattern from **calibdb.net** and develops a measurement system to calculate real-world dimensions of objects using perspective projection equations. The system converts pixel coordinates to physical measurements through the pinhole camera model.
 
 ---
 
@@ -17,11 +17,11 @@ This project implements camera calibration using a checkerboard pattern from **c
 
 ## Objectives
 
-1. Calibrate a camera using checkerboard pattern from calibdb.net[web:13][web:15]
-2. Extract camera intrinsic parameters (fx, fy, cx, cy) and distortion coefficients (k1, k2, k3, p1, p2)[web:13][web:26]
-3. Implement pixel coordinate retrieval through mouse clicks[web:7]
-4. Calculate real-world dimensions of objects using perspective projection[web:26]
-5. Validate measurements with known object dimensions[web:18]
+1. Calibrate a camera using checkerboard pattern from calibdb.net
+2. Extract camera intrinsic parameters (fx, fy, cx, cy) and distortion coefficients (k1, k2, k3, p1, p2)
+3. Implement pixel coordinate retrieval through mouse clicks
+4. Calculate real-world dimensions of objects using perspective projection
+5. Validate measurements with known object dimensions
 
 ---
 
@@ -39,7 +39,7 @@ This project implements camera calibration using a checkerboard pattern from **c
 ### Step 1: Prepare Calibration Board
 - Visit calibdb.net and download/print the calibration board
 - Alternatively, display the board directly on a computer screen
-- Ensure the board is flat and clearly visible[web:9]
+- Ensure the board is flat and clearly visible
 
 ### Step 2: Capture Calibration Images
 - Take at least 10 images of the calibration board using your camera
@@ -62,7 +62,7 @@ After calibration, note down the following values in a txt file:
   - cy (optical center y)
 - **Distortion Coefficients:**
   - k1, k2, k3 (radial distortion)
-  - p1, p2 (tangential distortion)[web:10]
+  - p1, p2 (tangential distortion)
 
 ### Step 5: Pixel Coordinate Retrieval
 - Implement functionality to retrieve pixel coordinates of points clicked on an image
