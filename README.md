@@ -1,87 +1,44 @@
-# Camera Calibration ➜ Real-World Dimension Estimation
+# CSc 8830: Computer Vision : Assignment 1 Solutions
 
-This module has two parts:
+## Question 1
 
-Camera Calibration – print a calibration board, capture images, and compute your camera intrinsics and distortion.
+To calibrate the camera, I have used a 8x6 checkerboard pattern.
 
-Real-World Measurement – click/drag an ROI on a scene image and compute the object’s true width/height using perspective projection.
+The code to take 10 images of the checker board using both the monochrome (left and right) and color cameras can be found in the file ques1.ipynb The images captured can found in the folder 'images'.
 
-Everything runs locally on Windows/macOS/Linux with Python.
+The images are then used for calculating the camera matrix, translation and rotational vectors.
 
+The corrected images are found in the 'images' folder and the corresponding camera values are stored in their respective folders (left, right and color).
 
+<table>
+  <tr>
+    <td><img src="images/left/17109820135253.png" alt="Image 1"></td>
+    <td><img src="images/left/17109820135253_corners.png" alt="Image 2"></td>
+    <td><img src="images/left/17109820135253_result.png" alt="Image 3"></td>
+  </tr>
+</table>
 
-Requirements
+___
 
-Python 3.9+
+## Question 2
 
-Install once:
+Used the camera matrix, rotational matrix, and translation matrix (previously derived in Question 1) to convert image coordinates to world coordinates.
 
-pip install -U opencv-python numpy matplotlib
+Distance Measurement in 3D Space: Selected two pixel coordinates from an image, converted them into world coordinates using the transformation matrices, and calculated the distance between these 3D points, determining the real-world distance.
 
-pip install pillow
+Successfully computed the rotation matrix from the extrinsic parameters and subsequently calculated the rotation angles along each axis, choosing the order of rotation based on the experimentation setup and requirements.
 
+___
 
-<img width="2716" height="1876" alt="image" src="https://github.com/user-attachments/assets/dfdc1040-07da-4eb0-a00d-b64175f1d985" />
+## Question 3
 
+I designed and implemented a script utilizing perspective projection equations to determine the real-world dimensions of objects.
 
+The implementation includes:
 
+- **ROI Selection**: Resizable window with interactive ROI selection on the display image
+- **Coordinate Mapping**: Maps ROI from display coordinates back to original image coordinates with proper scaling
+- **Camera Intrinsics**: Uses calibrated camera parameters (FX, FY, cx, cy) for accurate measurements
+- **Distance Calculation**: Computes real-world width and height using pinhole camera model with measured distance Z
 
-
-## Part 1 — Camera Calibration
-##Step 1 — Get a calibration board
-
-Download/print a checkerboard from calibdb.net (or any standard source).
-
-Recommended inner-corner grid (cols × rows): 9×6 (or 7×6).
-
-Mount to a flat, rigid surface (foam board/glass).
-
-Measure square size precisely (e.g., 24.0 mm).
-
-Image placeholder — replace later:
-
-
-Step 2 — Capture images
-
-Use the same camera you’ll measure with later.
-
-Take ≥ 10 photos from the same camera orientation but vary distance and angles:
-
-Change tilt/rotation/position in the frame; include corners & edges.
-
-Avoid motion blur; use even lighting and sharp focus.
-
-Image placeholder — replace later:
-
-
-Step 3 — Calibrate with Python
-
-Use your course calibration code (or any OpenCV chessboard calibration) to compute K and distortion.
-
-Windows (PowerShell)
-
-python .\calibrate.py --images ".\Calibration\*.JPG" --grid 9x6 --square 24.0 --out calibration.npz --save-report
-
-
-macOS / Linux
-
-python ./calibrate.py --images "./Calibration/*.JPG" --grid 9x6 --square 24.0 --out calibration.npz --save-report
-
-
-Should produce:
-
-Camera matrix K = [[fx, 0, cx],[0, fy, cy],[0, 0, 1]]
-
-Distortion coefficients k1, k2, p1, p2, k3
-
-
-
-
-
-
-
-
-
-Annotatted Image of the Object:
-
-<img width="1523" height="850" alt="image" src="https://github.com/user-attachments/assets/b56afd00-b6c6-457d-9a81-759eabd609fa" />
+### Camera Parameters Used:
