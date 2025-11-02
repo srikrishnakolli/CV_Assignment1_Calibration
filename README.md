@@ -11,3 +11,6 @@ Everything runs locally on Windows/macOS/Linux with Python.
 
 
 <img width="2716" height="1876" alt="image" src="https://github.com/user-attachments/assets/dfdc1040-07da-4eb0-a00d-b64175f1d985" />
+
+
+<img width="1523" height="850" alt="image" src="https://github.com/user-attachments/assets/b56afd00-b6c6-457d-9a81-759eabd609fa" />
