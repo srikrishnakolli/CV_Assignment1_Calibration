@@ -7,3 +7,7 @@ Camera Calibration – print a calibration board, capture images, and compute yo
 Real-World Measurement – click/drag an ROI on a scene image and compute the object’s true width/height using perspective projection.
 
 Everything runs locally on Windows/macOS/Linux with Python.
+
+
+
+<img width="2716" height="1876" alt="image" src="https://github.com/user-attachments/assets/dfdc1040-07da-4eb0-a00d-b64175f1d985" />
