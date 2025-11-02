@@ -1,4 +1,4 @@
-Camera Calibration ➜ Real-World Dimension Estimation
+# Camera Calibration ➜ Real-World Dimension Estimation
 
 This module has two parts:
 
@@ -17,7 +17,7 @@ Python 3.9+
 Install once:
 
 pip install -U opencv-python numpy matplotlib
-# Optional if EXIF rotations or non-standard formats matter:
+
 pip install pillow
 
 
