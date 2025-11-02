@@ -27,8 +27,8 @@ pip install pillow
 
 
 
-Part 1 — Camera Calibration
-Step 1 — Get a calibration board
+## Part 1 — Camera Calibration
+##Step 1 — Get a calibration board
 
 Download/print a checkerboard from calibdb.net (or any standard source).
 
