@@ -95,7 +95,7 @@ After calibration, note down the following values in a txt file:
 
 <table>
   <tr>
-    <td> ![ObjectImage](https://github.com/user-attachments/assets/f7cb616c-191c-44ec-befa-3b9406f71b90)
+    <td> <img width="1037" height="751" alt="image" src="https://github.com/user-attachments/assets/96be2d3e-f3bd-4515-873a-28cdbbbddfa5" />
  </td>
     <td></td>
     <td></td>
