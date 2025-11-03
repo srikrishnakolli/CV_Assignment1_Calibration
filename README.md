@@ -97,7 +97,8 @@ After calibration, note down the following values in a txt file:
   <tr>
     <td> <img width="1037" height="751" alt="image" src="https://github.com/user-attachments/assets/96be2d3e-f3bd-4515-873a-28cdbbbddfa5" />
  </td>
-    <td></td>
+    <td> <img width="875" height="532" alt="image" src="https://github.com/user-attachments/assets/a09cac9c-6c74-4816-931b-38395a4ab3a8" />
+ </td>
     <td></td>
   </tr>
 </table>
