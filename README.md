@@ -81,3 +81,24 @@ After calibration, note down the following values in a txt file:
 6. For a cube: calculate the side length
 
 
+
+
+
+
+
+
+
+
+
+# Results Images for the task
+
+
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
