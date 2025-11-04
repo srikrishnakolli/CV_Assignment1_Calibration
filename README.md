@@ -99,7 +99,6 @@ After calibration, note down the following values in a txt file:
  </td>
     <td> <img width="875" height="532" alt="image" src="https://github.com/user-attachments/assets/a09cac9c-6c74-4816-931b-38395a4ab3a8" />
  </td>
-    <td></td>
   </tr>
 </table>
 
