@@ -210,10 +210,10 @@ python backup/Assignment1.py
    ```
 2. **Camera parameters:** Update the intrinsic parameters (fx, fy, cx, cy)
    ```python
-   FX = 4124.85217000  # Your fx value
-   FY = 4126.41606000  # Your fy value
-   cx = 2774.74600000  # Your cx value
-   cy = 2302.01489000  # Your cy value
+   FX = 4124.85217000  # fx value
+   FY = 4126.41606000  # fy value
+   cx = 2774.74600000  # cx value
+   cy = 2302.01489000  # cy value
    ```
 3. **Distance to object:** Set the measured distance (Z) in millimeters
    ```python
